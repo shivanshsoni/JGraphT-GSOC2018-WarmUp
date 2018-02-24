@@ -1,0 +1,103 @@
+digraph GOT {
+	graph[bgcolor=whitesmoke]
+
+	subgraph cluster_stark {
+		style=filled;
+		color=lightblue;
+		label="House Stark";
+		node [style=filled, color=white];
+		Rickard;
+		Brandon; Eddard; Benjen; Lyanna;
+		Robb; Sansa; Arya; Brandon; Rickon;
+		node [shape=doublecircle, style=filled, color=white];
+		Jon;
+		Rickard -> Brandon;
+		Rickard -> Eddard;
+		Rickard -> Benjen;
+		Rickard -> Lyanna;
+		Eddard -> Robb;
+		Eddard -> Sansa;
+		Eddard -> Arya;
+		Eddard -> Brandon;
+		Eddard -> Rickon;
+		Eddard -> Jon [label="bastard", color=azure4];
+	}
+
+	subgraph cluster_targaryen {
+		style=filled;
+		color=burlywood4;
+		label="House Targaryen";
+		node [style=filled, color=white];
+		Rhaelle; Rhaegar; Viserys; Daenerys; Aegon;
+		node [style=filled, color=white, label="Maekar I"]; Maekar_I;
+		node [style=filled, color=white, label="Maester_Aemon"]; Maester_Aemon;
+		node [style=filled, color=white, label="Aegon V"]; Aegon_V;
+		node [style=filled, color=white, label="Jaehaerys_II"]; Jaehaerys_II;
+		node [style=filled, color=white, label="Aerys II the Mad"]; Aerys_II;
+		Maekar_I -> Maester_Aemon;
+		Maekar_I -> Aegon_V;
+		Aegon_V -> Jaehaerys_II;
+		Aegon_V -> Rhaelle;
+		Jaehaerys_II -> Aerys_II;
+		Aerys_II -> Rhaegar;
+		Aerys_II -> Viserys;
+		Aerys_II -> Daenerys;
+		Rhaegar -> Aegon;
+	}
+
+	subgraph cluster_baratheon {
+		style=filled;
+		color=chocolate3;
+		label="House Baratheon";
+		node [style=filled, color=white];
+		Ormund; Steffon; Robert; Stannis; Renly; Shireen; Joffrey; Myrcellar; Tommen;
+		Ormund -> Steffon;
+		Rhaelle -> Steffon;
+		Ormund -> Rhaelle;
+		Rhaelle -> Ormund;
+		Steffon -> Robert;
+		Steffon -> Stannis;
+		Steffon -> Renly;
+		Stannis -> Shireen;
+		Robert -> Joffrey;
+		Robert -> Myrcellar;
+		Robert -> Tommen;
+	}
+
+	subgraph cluster_lannister {
+		style=filled;
+		color=cornsilk3;
+		label="House Lannister";
+		node [style=filled, color=white];
+		Tywin; Joanna; Jaime; Cersei; Tyrion;
+		Tywin -> Joanna;
+		Joanna -> Tywin;
+		Joanna -> Jaime;
+		Joanna -> Cersei;
+		Joanna -> Tyrion;
+		Tywin -> Jaime;
+		Tywin -> Cersei;
+		Tywin -> Tyrion;
+		Jaime -> Cersei;
+		Cersei -> Jaime;
+		Robert -> Cersei;
+		Cersei -> Robert;
+		Cersei -> Joffrey;
+		Cersei -> Myrcellar;
+		Cersei -> Tommen;
+		Jaime -> Joffrey [style=dashed];
+		Jaime -> Myrcellar [style=dashed];
+		Jaime -> Tommen [style=dashed];
+	}
+
+	Lyanna -> Rhaegar [style=dashed, label="?"];
+	Rhaegar -> Lyanna [style=dashed, label="?"];
+	Lyanna -> Jon [style=dashed, label="?"];
+	Rhaegar -> Jon [style=dashed, label="?"];
+
+	labelloc="t";
+	fontsize=50;
+	fontcolor=lightslategrey;
+	fontname="Bookman Old Style Bold Italic";
+	label="Game of Thrones Family Tree"
+}

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="org.jgrapht:jgrapht-io:1.1.1-SNAPSHOT" type="repository">
+    <properties maven-id="org.jgrapht:jgrapht-io:1.1.1-SNAPSHOT" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jgrapht/jgrapht-io/1.1.1-SNAPSHOT/jgrapht-io-1.1.1-SNAPSHOT.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jgrapht/jgrapht-core/1.1.1-SNAPSHOT/jgrapht-core-1.1.1-SNAPSHOT.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/antlr/antlr4-runtime/4.7/antlr4-runtime-4.7.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
